@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "5c393595-5a9c-473d-8978-c1e9ac60d99e",
+		"name": "control-sucursales-empresas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "empresas",
+			"item": [
+				{
+					"name": "GET empresas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"emilio@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/empresas/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"empresas",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST empresas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"tegnologias S.A.\",\r\n    \"email\": \"tegnologia@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"tipo\": \"DISTRIBUIDORA\",\r\n    \"telefono\": 55788649\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/empresas/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"empresas",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT empresas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tecnologo S.A.\",\r\n    \"email\": \"tecnologicos@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"tipo\": \"TECNOLOGÍA\",\r\n    \"telefono\": 55788649\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/empresas/editar/64050a648fb74eee3c780ce4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"empresas",
+								"editar",
+								"64050a648fb74eee3c780ce4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE empresas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/empresas/eliminar/64050a648fb74eee3c780ce4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"empresas",
+								"eliminar",
+								"64050a648fb74eee3c780ce4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "POST login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tec2@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sucursal",
+			"item": [
+				{
+					"name": "GET sucursal",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA0Yzg0MTU1YThkMTIwNTUxNDAxNDciLCJpYXQiOjE2NzgwNTIzMzMsImV4cCI6MTY3ODA2NjczM30.Q005UU_YKYZLHxcEWgCZYV85fzuI4wUDJIw9ixb5uYA",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/sucursales/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sucursales",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST sucursal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA0YzEwMTFhODliN2NlODUxYTAzYmIiLCJpYXQiOjE2NzgwNTIxNTcsImV4cCI6MTY3ODA2NjU1N30.aqnghWHeEZIX2mkfcu4RI4TugQw5zlmsCthu-8mCBts",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Sucursal3\",\r\n    \"municipio\" : \"mixco\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/sucursales/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sucursales",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT sucursal",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA0YzEwMTFhODliN2NlODUxYTAzYmIiLCJpYXQiOjE2NzgwNTIxNTcsImV4cCI6MTY3ODA2NjU1N30.aqnghWHeEZIX2mkfcu4RI4TugQw5zlmsCthu-8mCBts",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Sucursal\",\r\n    \"municipio\" : \"guatemala\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/sucursales/editar/64050b838fb74eee3c780cfd",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sucursales",
+								"editar",
+								"64050b838fb74eee3c780cfd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE sucursal",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA0YzEwMTFhODliN2NlODUxYTAzYmIiLCJpYXQiOjE2NzgwNTIxNTcsImV4cCI6MTY3ODA2NjU1N30.aqnghWHeEZIX2mkfcu4RI4TugQw5zlmsCthu-8mCBts",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/sucursales/eliminar/64050b838fb74eee3c780cfd",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sucursales",
+								"eliminar",
+								"64050b838fb74eee3c780cfd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
